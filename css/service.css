@@ -102,6 +102,7 @@ body {
   letter-spacing: 1px;
   transition: 0.3s;
   border-radius: 10px;
+  color: #000000;
 }
 
 .category-btn:hover,

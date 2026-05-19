@@ -726,31 +726,40 @@ body.modal-open {
 
 /* PANEL */
 
+/* ================= MOBILE MENU BETTER ================= */
+
 .nav-links {
   position: fixed;
 
   top: 0;
   right: -100%;
 
-  width: 82%;
-  max-width: 340px;
+  width: 78%;
+  max-width: 320px;
 
   height: 100vh;
 
-  background: #050505;
+  background: rgba(10,10,10,0.96);
+
+  backdrop-filter: blur(14px);
 
   display: flex;
   flex-direction: column;
 
   padding-top: 95px;
 
-  transition: 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  gap: 0;
+
+  transition:
+    right 0.35s ease,
+    opacity 0.3s ease;
 
   z-index: 2500;
 
-  gap: 0;
+  box-shadow:
+    -10px 0 40px rgba(0,0,0,0.25);
 
-  box-shadow: -20px 0 60px rgba(0,0,0,0.35);
+    text-transform: uppercase;
 }
 
 /* OPEN */
@@ -764,12 +773,11 @@ body.modal-open {
 .nav-links li {
   width: 100%;
 
-  list-style: none;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  border-bottom:
+    1px solid rgba(255,255,255,0.06);
 }
 
-/* FULL CLICK AREA */
+/* LINKS */
 
 .nav-links li a {
   display: flex;
@@ -777,32 +785,35 @@ body.modal-open {
 
   width: 100%;
 
-  padding: 24px 30px;
+  padding: 22px 28px;
 
-  color: white;
+  color: rgba(255,255,255,0.92);
+
   text-decoration: none;
 
   font-family: "Raleway";
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
 
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
 
-  transition: 0.3s ease;
+  transition:
+    background 0.25s ease,
+    padding-left 0.25s ease;
 }
 
 /* HOVER */
 
 .nav-links li a:hover {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.04);
 
-  padding-left: 38px;
+  padding-left: 34px;
 }
 
-/* ACTIVE */
+/* ACTIVE PAGE */
 
 .nav-links li a.active {
-  position: relative;
+  color: white;
 }
 
 .nav-links li a.active::after {
@@ -810,60 +821,66 @@ body.modal-open {
 
   position: absolute;
 
-  left: 30px;
+  left: 28px;
   bottom: 16px;
 
-  width: 42px;
+  width: 32px;
   height: 1px;
 
-  background: #b30000;
+  background: rgba(255,255,255,0.5);
 }
 
-/* BUTTON AREA */
-
-.mobile-btn-wrap {
-  padding: 30px;
-
-  border-bottom: none !important;
-}
-
-/* BUTTON */
-
-.mobile-btn-wrap .btn-programare {
-  width: 100%;
-
-  background: white;
-  color: black;
-
-  border-radius: 12px;
-
-  padding: 17px;
-
-  font-size: 13px;
-
-  letter-spacing: 1.5px;
-
-  font-weight: 600;
-}
-
-/* OVERLAY FEEL */
+/* CLICK OUTSIDE FEEL */
 
 .nav-links::before {
   content: "";
 
-  position: absolute;
+  position: fixed;
 
-  left: -50px;
-  top: 0;
+  inset: 0;
 
-  width: 50px;
-  height: 100%;
+  background: rgba(0,0,0,0.25);
 
-  background: linear-gradient(
-    to left,
-    rgba(0,0,0,0.25),
-    transparent
-  );
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.3s ease;
+
+  z-index: -1;
+}
+
+.nav-links.active::before {
+  opacity: 1;
+}
+
+/* BUTTON */
+
+.mobile-btn-wrap {
+  padding: 26px 22px;
+
+  border-bottom: none !important;
+}
+
+.mobile-btn-wrap .btn-programare {
+  width: 100%;
+
+  border-radius: 10px;
+
+  padding: 16px;
+
+  background: white;
+  color: black;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: 0.25s ease;
+}
+
+.mobile-btn-wrap .btn-programare:hover {
+  transform: translateY(-2px);
 }
 
 

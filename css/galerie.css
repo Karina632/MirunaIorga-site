@@ -36,6 +36,13 @@ body {
     font-weight: 500;
 }
 
+.text p {
+  font-size: 16px;
+   margin-top: 10px;
+  font-family: "Raleway";
+  color: #ddd;
+}
+
 
 /* ================= GALERIE ================= */
 
@@ -59,6 +66,8 @@ body {
   font-weight: 600;
   font-family: "Raleway";
   letter-spacing: 1px;
+
+  color: black;
 }
 
 .filter-buttons button.active,

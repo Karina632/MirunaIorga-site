@@ -1,5 +1,4 @@
 
-
 /* ================= LEGAL PAGES ================= */
 .legal-page {
   max-width: 1000px;
@@ -90,10 +89,19 @@
   color: gray;
 }
 
-
+.text h1 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Playfair Display";
+}
 
 /* ================= MOBILE ================= */
 @media (max-width:768px) {
+
+  .text h1 {
+  font-size: 43px;
+  }
+
   .legal-page {
     margin: 50px auto;
   }
