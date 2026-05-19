@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* ABOUT HERO */
+.about-hero {
+  height: 60vh;
+  margin-top: 80px;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+              url("../images/blur.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  margin-top: 100px;
+}
+
+.about-hero h1 {
+  font-size: 60px;
+  font-family: "PT Serif";
+  font-weight: 500;
+}
+
+.about-hero p {
+  margin-top: 10px;
+  font-family: "Raleway";
+  color: #ddd;
+}
+
+/* =====================carduri====================== */
+.services {
+  padding: 100px 40px;
+  background: #f8f6f3;
+}
+
+.services-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* SIDEBAR */
+.services-sidebar {
+  background: white;
+  padding: 50px 35px;
+  border-radius: 18px;
+  position: sticky;
+  top: 120px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.services-sidebar h2 {
+  font-family: "Playfair Display";
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.services-sidebar p {
+  font-family: "Raleway";
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.sidebar-line {
+  width: 60px;
+  height: 2px;
+  background: black;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+/* CONTENT */
+.services-content {
+  background: white;
+  padding: 45px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.service-category {
+  display: none;
+}
+
+.service-category.active {
+  display: block;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+  gap: 20px;
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item span:first-child {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+}
+
+.service-title {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.service-info small {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+  margin-top: 5px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.service-item span:last-child {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.service-note {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.service-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  background: #222;
+}
+
+
+/* =======================BLUR========================== */
+.blur {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  padding: 150px 0px;
+
+  height: 80vh;
+  background-image: url("../images/blur.png");
+
+}
+
+.mucu {
+  font-size: 50px;
+}
+.kuku {
+  font-size: 18px;
+  color: #d4d4d4;
+  font-family: "Raleway";
+  margin-top: 20px;
+}
+
+.btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.btn button {
+  padding: 17px 30px;
+  font-size: 15px;
+  font-family: "Roboto";
+
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn .first {
+  padding: 19px 32px;
+}
+
+.first {
+  background-color: white;
+  transition: all 0.3s ease;
+  border: none;
+
+  color: #000000;
+}
+
+.first:hover {
+  background-color: #efefef;
+  transform: scale(1.05);
+}
+.second {
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  color: white;
+}
+
+.second:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+  color: black;
+}
+
+
+
+
+
+@media (max-width:768px) {
+
+ 
+/* ===== SERVICES MOBILE PREMIUM FIX ===== */
+
+.about-hero {
+  height: 52vh;
+  padding: 0 20px;
+}
+
+.about-hero h1 {
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.about-hero p {
+  font-size: 15px;
+  max-width: 320px;
+  margin: 12px auto 0;
+  line-height: 1.6;
+}
+
+  .services {
+    padding: 60px 16px;
+  }
+
+  .services-sidebar,
+  .services-content {
+    padding: 25px;
+  }
+
+  .services-sidebar h2 {
+    font-size: 30px;
+  }
+
+  .service-title {
+    font-size: 15px;
+  }
+
+  .service-info {
+    max-width: 70%;
+  }
+
+   .service-item span:first-child,
+  .service-title {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  .service-item span:last-child {
+    font-size: 15px;
+  }
+
+  .service-info small {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+
+/* FEATURED CARD */
+.featured {
+  transform: none;
+}
+
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .services-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .services-sidebar {
+    position: relative;
+    top: auto;
+  }
+}

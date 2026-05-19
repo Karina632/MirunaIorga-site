@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- SECURITY -->
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+img-src 'self' https: data:;
+script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://cdn.emailjs.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+font-src 'self' https://fonts.gstatic.com data:;
+connect-src 'self' https://api.emailjs.com https://www.google-analytics.com;
+frame-src https://www.google.com;
+object-src 'none';
+base-uri 'self';
+form-action 'self';
+frame-ancestors 'none';
+">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <title>Servicii | Luxe Beauty</title>
+
+  <meta name="description" content="Descoperă serviciile premium Luxe Beauty: manichiură, extensii gene și beauty services de lux.">
+  <meta name="keywords" content="servicii sprâncene, extensii gene, beauty premium">
+  <meta name="author" content="Luxe Beauty">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/service.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 style="display:none;">Salon sprâncene și gene premium Luxe Beauty</h1>
+
+<div id="header-component"></div>
+
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="about-hero-content" data-aos="fade-up">
+    <h1>Serviciile Noastre</h1>
+    <p>Servicii premium create pentru femei care vor rezultate impecabile, nu compromisuri.</p>
+  </div>
+</section>
+
+
+
+<section class="services">
+
+  <div class="services-wrapper">
+
+    <!-- SIDEBAR CATEGORII -->
+    <div class="services-sidebar" data-aos="fade-right">
+      <h2>Beauty Services</h2>
+      <p>Eleganță, precizie și rezultate premium pentru fiecare detaliu.</p>
+
+      <div class="sidebar-line"></div>
+
+      <button class="category-btn active" data-target="brows">Servicii sprâncene</button>
+      <button class="category-btn" data-target="lashes">Extensii gene</button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="services-content">
+
+      <!-- SPRÂNCENE -->
+      <div class="service-category active" id="brows" data-aos="fade-up">
+
+        <div class="service-item">
+          <div class="service-info">
+            <span class="service-title">Stilizare sprâncene</span>
+            <small>(asimetrii / definire formă)</small>
+          </div>
+          <span>50 lei</span>
+        </div>
+
+        <div class="service-item">
+          <div class="service-info">
+            <span class="service-title">Henna Brows</span>
+            <small>(spa brows + stilizare + intensitate și definire formă)</small>
+          </div>
+          <span>100 lei</span>
+        </div>
+
+        <div class="service-item">
+          <div class="service-info">
+            <span class="service-title">Lami Brows</span>
+            <small>(spa brows + stilizare + sprâncene Lami efect)</small>
+          </div>
+          <span>120 lei</span>
+        </div>
+
+        <div class="service-item">
+          <div class="service-info">
+            <span class="service-title">Pachet complet</span>
+            <small>(conține toate procedurile)</small>
+          </div>
+          <span>150 lei</span>
+        </div>
+
+        <button class="service-btn open-booking">Programează-te</button>
+
+      </div>
+
+      <!-- GENE -->
+      <div class="service-category" id="lashes">
+
+        <div class="service-item"><span>Clasic 2D</span><span>200/180 lei</span></div>
+        <div class="service-item"><span>Clasic 3D</span><span>230/200 lei</span></div>
+        <div class="service-item"><span>Clasic 4D</span><span>240/210 lei</span></div>
+        <div class="service-item"><span>Clasic 6D</span><span>250/220 lei</span></div>
+        <div class="service-item"><span>Soft volume</span><span>260/230 lei</span></div>
+        <div class="service-item"><span>Mediu volume</span><span>280/250 lei</span></div>
+        <div class="service-item"><span>Mega volume</span><span>300/270 lei</span></div>
+        <div class="service-item"><span>Diamond natural 2D-4D</span><span>250/230 lei</span></div>
+        <div class="service-item"><span>Diamond extra 6D-8D</span><span>280/250 lei</span></div>
+        <div class="service-item"><span>Diamond foxy</span><span>300/270 lei</span></div>
+        <div class="service-item"><span>Foxy mediu 2D-6D</span><span>260/240 lei</span></div>
+        <div class="service-item"><span>Foxy volume</span><span>300/270 lei</span></div>
+        <div class="service-item"><span>Wispy efect</span><span>250/230 lei</span></div>
+        <div class="service-item"><span>Kim K efect</span><span>270/250 lei</span></div>
+        <div class="service-item"><span>Half efect</span><span>270/250 lei</span></div>
+        <div class="service-item"><span>Demontare din altă parte</span><span>40 lei</span></div>
+
+        <p class="service-note">
+          Întreținerea se face la maxim 3 săptămâni.
+          După, nu se mai consideră întreținere și aplicăm set nou.
+        </p>
+
+        <button class="service-btn open-booking">Programează-te</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div id="cookie-banner-component"></div>
+<div id="icons-component"></div>
+<div id="footer-component"></div>
+<div id="booking-component"></div>
+<!-- BACK TO TOP -->
+<button id="backToTop">&#8593;</button>
+
+
+<script src="/js/main.js" defer></script>
+  <script src="/js/gdpr.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
+<script>
+const categoryButtons = document.querySelectorAll(".category-btn");
+const categories = document.querySelectorAll(".service-category");
+
+categoryButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    categoryButtons.forEach(btn => btn.classList.remove("active"));
+    categories.forEach(cat => cat.classList.remove("active"));
+
+    button.classList.add("active");
+    document.getElementById(button.dataset.target).classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>
