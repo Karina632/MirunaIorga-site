@@ -14,6 +14,21 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: linear-gradient(to bottom,#ffedfd,#fb75d3);
+  border-radius: 999px;
+
+}
+
 
 
 /* ===== HEADER ===== */
@@ -625,6 +640,7 @@ body.modal-open {
   font-weight: 700;
   font-size: 14px;
   transition: 0.3s;
+  color: rgb(0, 0, 0);
 }
 
 #acceptCookies {
@@ -662,7 +678,7 @@ body.modal-open {
 
 .cookie-links a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 
