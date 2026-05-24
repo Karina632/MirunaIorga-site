@@ -181,6 +181,34 @@ body {
   color: rgba(255, 255, 255, 0.846);
 }
 
+.pret-btn {
+  display: inline-block;
+  margin-top: 18px;
+
+  padding: 12px 24px;
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+
+  color: white;
+  text-decoration: none;
+
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.pret-btn:hover {
+  background: white;
+  color: black;
+
+  transform: translateY(-2px);
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -308,6 +336,100 @@ body {
   padding: 5px 10px;
   border-radius: 1px;
   font-family: "Raleway";
+}
+
+
+/* ================= FAQ ================= */
+
+.faq {
+  padding: 90px 40px;
+  background: white;
+}
+
+.faq-title {
+  text-align: center;
+}
+
+.faq-title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 43px;
+  font-weight: 400;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.faq-question {
+  width: 100%;
+
+  background: transparent;
+  border: none;
+
+  padding: 28px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  font-size: 20px;
+  font-family: "Playfair Display";
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+.faq-question:hover {
+  opacity: 0.7;
+}
+
+.faq-question span {
+  font-size: 28px;
+  transition: 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+
+  opacity: 0;
+
+  transform: translateY(-8px);
+
+  transition:
+    max-height 0.5s ease,
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.faq-answer p {
+  padding-bottom: 25px;
+
+  color: #666;
+  font-family: "PT Serif";
+  line-height: 1.7;
+  font-size: 17px;
+
+  max-width: 750px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
 }
 
 
@@ -591,6 +713,40 @@ body {
 
 
 @media (max-width:768px) {
+
+  /* FAQ MOBILE */
+.faq {
+  padding: 70px 20px;
+}
+
+.faq-title h2 {
+  font-size: 36px;
+}
+
+.faq-question {
+  font-size: 17px;
+  line-height: 1.5;
+  gap: 15px;
+
+  padding: 22px 0;
+}
+
+.faq-question span {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+  .pret-btn {
+  margin-top: 16px;
+  padding: 13px 22px;
+  font-size: 14px;
+}
 
   .title h1 {
   font-size: clamp(38px, 11vw, 52px);
